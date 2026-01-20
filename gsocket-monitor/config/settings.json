@@ -1,0 +1,7 @@
+{
+  "monitor_interval": 60,
+  "gsocket_endpoint": "localhost:8080",
+  "max_retries": 3,
+  "timeout": 10,
+  "maintenance_enabled": true
+}

@@ -1,0 +1,14 @@
+[Unit]
+Description=GSocket Access Monitor and Maintenance Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/workspace/gsocket-monitor
+ExecStart=/usr/bin/python3 /workspace/gsocket-monitor/app.py monitor
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
